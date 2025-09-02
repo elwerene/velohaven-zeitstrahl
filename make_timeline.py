@@ -191,7 +191,7 @@ class Timeline:
 		for callout in callouts_data:
 			event = callout[0]
 			event_date = self.datetime_from_string(callout[1])
-			event_color = callout[2] if len(callout) > 2 else Colors.black
+			event_color = callout[2] if len(callout) > 2 else "#ea3d69"
 			sorted_dates.append(event_date)
 			if event_date not in inv_callouts:
 				inv_callouts[event_date] = []
@@ -219,9 +219,9 @@ class Timeline:
 			#self.drawing.add(self.drawing.circle((left, y), stroke='red', stroke_width=2))		
 			path_data = 'M%i,%i L%i,%i L%i,%i' % (x, 0, x, y, x - self.callout_size[0], y)
 			self.g_axis.add(self.drawing.path(path_data, stroke=event_color, stroke_width=1, fill='none'))
-			self.g_axis.add(self.drawing.text(event, insert=(x - self.callout_size[0] - self.text_fudge[0], y + self.text_fudge[1]), stroke='none', fill=event_color, font_family='Helevetica', font_size='6pt', text_anchor='end'))
+			self.g_axis.add(self.drawing.text(event, insert=(x - self.callout_size[0] - self.text_fudge[0], y + self.text_fudge[1]), stroke='none', fill="#3a3a4d", font_family='Helevetica', font_size='6pt', text_anchor='end'))
 			self.add_axis_label(event_date, str(event_date[0]), tick=False, fill=Colors.black)
-			self.g_axis.add(self.drawing.circle((x, 0), r=4, stroke=event_color, stroke_width=1, fill='white'))
+			self.g_axis.add(self.drawing.circle((x, 0), r=4, stroke=event_color, stroke_width=1, fill='#ea3d69'))
 			prev_x.append(x)
 			prev_level.append(k)
 		return min_y
