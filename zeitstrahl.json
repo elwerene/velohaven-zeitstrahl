@@ -1,0 +1,42 @@
+{
+    "width": 750,
+    "start": "Jun 1 2019",
+    "end": "Dec 31 2025",
+    "num_ticks": 0,
+    "tick_format": "%d.%m.%Y",
+    "callouts": [
+        [
+            "Projektgründung",
+            "Sep 18, 2019"
+        ],
+        [
+            "Erstes Plenum",
+            "Oct 19, 2019"
+        ],
+        [
+            "Vereinsgründung mit symbolischer Grundsteinlegung",
+            "Oct 8, 2022"
+        ],
+        [
+            "Bewerbungsabgabe für Baugrundstück in Kleineschholz mit Konzeptbeschreibung",
+            "Jun 26, 2024"
+        ],
+        [
+            "Grundstücksreservierungszusage der Stadt Freiburg / Gemeinderatsitzung",
+            "Dec 10, 2024"
+        ],
+        [
+            "GmbH-Gründung",
+            "Jan 30, 2025"
+        ],
+        [
+            "GmbH-Eintragung im Handelsregister",
+            "Mar 27, 2025"
+        ],
+        [
+            "Beteiligungsbeschluss Mietshäuser Syndikat",
+            "Aug 2, 2025"
+        ]
+    ],
+    "eras": []
+}
